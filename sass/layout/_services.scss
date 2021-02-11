@@ -1,5 +1,11 @@
 /* Services */
 
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
 .services {
   padding-top: 0;
 

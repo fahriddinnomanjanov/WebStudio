@@ -609,7 +609,7 @@ ol {
   color: #757575;
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .about__caption {
     text-align: center;
   }
@@ -659,6 +659,12 @@ ol {
 }
 
 /* Services */
+@media screen and (max-width: 1199px) {
+  .services {
+    display: none;
+  }
+}
+
 .services {
   padding-top: 0;
 }
