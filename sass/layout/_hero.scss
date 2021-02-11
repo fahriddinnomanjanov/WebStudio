@@ -56,4 +56,13 @@
       background-image: url(../images/hero-descktop/hero_bg-desktop@2x.jpg);
     }
   }
+
+  .hero__wrapper {
+    max-width: 696px;
+  }
+
+  .hero__heading {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }

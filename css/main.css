@@ -455,16 +455,26 @@ ol {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .section-heading {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33;
   text-align: center;
   color: #212121;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+  .section-heading {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 /* header */
@@ -549,16 +559,17 @@ ol {
   }
 }
 
-/* About */
-.about__item {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-left: 30px;
-  margin-top: 30px;
-  -ms-flex-preferred-size: calc(100% / 4 - 30px);
-      flex-basis: calc(100% / 4 - 30px);
+@media screen and (min-width: 1200px) {
+  .hero__wrapper {
+    max-width: 696px;
+  }
+  .hero__heading {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }
 
+/* About */
 .about__item::before {
   display: block;
   content: "";
@@ -585,18 +596,10 @@ ol {
   background-image: url(../images/icons/astronaut.svg);
 }
 
-.about__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .about__caption {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #212121;
@@ -604,7 +607,55 @@ ol {
 
 .about__text {
   color: #757575;
-  margin-bottom: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .about__caption {
+    text-align: center;
+  }
+  .about__text:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+  }
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__caption {
+    font-size: 16px;
+  }
+  .about__item {
+    margin-left: 30px;
+    margin-top: 30px;
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+  }
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .about__text {
+    margin-bottom: 0;
+  }
 }
 
 /* Services */
