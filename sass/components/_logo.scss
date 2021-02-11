@@ -1,0 +1,14 @@
+.navigation__logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  color: #000000;
+  margin-right: 93px;
+  transition: color 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--color-main);
+  }
+}

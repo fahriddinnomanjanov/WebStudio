@@ -1,0 +1,16 @@
+/* header */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.navigation {
+  display: flex;
+  align-content: center;
+}
+
+.navigation__text {
+  color: var(--color-main);
+}
