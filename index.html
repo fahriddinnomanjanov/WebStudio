@@ -118,34 +118,86 @@
           <h2 class="section-heading services__caption">Чем мы занимаемся</h2>
           <ul class="list services__list">
             <li class="services__item">
-              <img
-                class="services__image"
-                src="./images/services_image/img1.jpg"
-                alt=""
-                width="370"
-                height="294"
-              />
+              <picture class="services__list-item--picture">
+                <source
+                  srcset="
+                    ./images/work-desktop/desktop-applications-01.webp    1x,
+                    ./images/work-desktop/desktop-applications-01@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work-desktop/desktop-applications-01.jpg    1x,
+                    ./images/work-desktop/desktop-applications-01@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="services__image"
+                  src="./images/services_image/img1.jpg"
+                />
+              </picture>
               <p class="services__text">Десктопные приложения</p>
             </li>
 
             <li class="services__item">
-              <img
-                class="services__image"
-                src="./images/services_image/img2.jpg"
-                alt=""
-                width="370"
-                height="294"
-              />
+              <picture class="services__list-item--picture">
+                <source
+                  srcset="
+                    ./images/work-desktop/desktop-applications-02.webp    1x,
+                    ./images/work-desktop/desktop-applications-02@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work-desktop/desktop-applications-02.jpg    1x,
+                    ./images/work-desktop/desktop-applications-02@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="services__image"
+                  src="./images/services_image/img2.jpg"
+                  alt=""
+                  width="370"
+                  height="294"
+                />
+              </picture>
               <p class="services__text">Мобильные приложения</p>
             </li>
             <li class="services__item">
-              <img
-                class="services__image"
-                src="./images/services_image/img3.jpg"
-                alt=""
-                width="370"
-                height="294"
-              />
+              <picture class="services__list-item--picture">
+                <source
+                  srcset="
+                    ./images/work-desktop/desktop-applications-03.webp    1x,
+                    ./images/work-desktop/desktop-applications-03@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+
+                <source
+                  srcset="
+                    ./images/work-desktop/desktop-applications-03.jpg    1x,
+                    ./images/work-desktop/desktop-applications-03@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="services__image"
+                  src="./images/services_image/img2.jpg"
+                  alt=""
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <p class="services__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -161,28 +213,61 @@
           <ul class="list our-team__list">
             <li class="our-team__list-item">
               <picture class="our-team__list-item--picture">
+                <!-- desktop -->
                 <source
                   srcset="
-                    ./images/team-desktop-01.webp    1x,
-                    ./images/team-desktop-01@2x.webp 2x
+                    ./images/team-desktop/team-desktop-01.webp    1x,
+                    ./images/team-desktop/team-desktop-01@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
-                />
+
                 <source
                   srcset="
-                    ./images/team-desktop-01.jpg    1x,
-                    ./images/team-desktop-01@2x.jpg 2x
+                    ./images/team-desktop/team-desktop-01.jpg    1x,
+                    ./images/team-desktop/team-desktop-01@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
+                  type="image/webp"
                 />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-01.webp    1x,
+                    ./images/team-tablet/team-tablet-01@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-01.jpg    1x,
+                    ./images/team-tablet/team-tablet-01@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob2.webp    1x,
+                    ./images/team-mobile/teammob2@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob2.jpg    1x,
+                    ./images/team-mobile/teammob2@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
                 <img
                   class="our-team__list-images"
                   src="./images/our-team/img4.jpg"
-                  alt=""
-                  width="270"
-                  height="260"
                 />
               </picture>
 
@@ -237,26 +322,57 @@
               <picture class="our-team__list-item--picture">
                 <source
                   srcset="
-                    ./images/team-desktop-02.webp    1x,
-                    ./images/team-desktop-02@2x.webp 2x
+                    ./images/team-desktop/team-desktop-02.webp    1x,
+                    ./images/team-desktop/team-desktop-02@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
-                />
+
                 <source
                   srcset="
-                    ./images/team-desktop-02.jpg    1x,
-                    ./images/team-desktop-02@2x.jpg 2x
+                    ./images/team-desktop/team-desktop-02.jpg    1x,
+                    ./images/team-desktop/team-desktop-02@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-02.webp    1x,
+                    ./images/team-tablet/team-tablet-02@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-02.jpg    1x,
+                    ./images/team-tablet/team-tablet-02@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob2.webp    1x,
+                    ./images/team-mobile/teammob2@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob2.jpg    1x,
+                    ./images/team-mobile/teammob2@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
                 />
                 <img
                   class="our-team__list-images"
                   src="./images/our-team/img5.jpg"
-                  alt=""
-                  width="270"
-                  height="260"
                 />
               </picture>
 
@@ -311,26 +427,57 @@
               <picture class="our-team__list-item--picture">
                 <source
                   srcset="
-                    ./images/team-desktop-03.webp    1x,
-                    ./images/team-desktop-03@2x.webp 2x
+                    ./images/team-desktop/team-desktop-03.webp    1x,
+                    ./images/team-desktop/team-desktop-03@2x.webp 2x
                   "
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
-                />
+
                 <source
                   srcset="
-                    ./images/team-desktop-03.jpg    1x,
-                    ./images/team-desktop-03@2x.jpg 2x
+                    ./images/team-desktop/team-desktop-03.jpg    1x,
+                    ./images/team-desktop/team-desktop-03@2x.jpg 2x
                   "
                   media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-03.webp    1x,
+                    ./images/team-tablet/team-tablet-03@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-03.jpg    1x,
+                    ./images/team-tablet/team-tablet-03@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob3.webp    1x,
+                    ./images/team-mobile/teammob3@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob3.jpg    1x,
+                    ./images/team-mobile/teammob3@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
                 />
                 <img
                   class="our-team__list-images"
                   src="./images/our-team/img6.jpg"
-                  alt=""
-                  width="270"
-                  height="260"
                 />
               </picture>
               <div class="our-team__several">
@@ -390,7 +537,7 @@
                   media="(min-width: 1200px)"
                   type="image/webp"
                 />
-                />
+
                 <source
                   srcset="
                     ./images/team-desktop/team-desktop-04.jpg    1x,
@@ -398,10 +545,42 @@
                   "
                   media="(min-width: 1200px)"
                 />
+                <!-- tablet -->
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-04.webp    1x,
+                    ./images/team-tablet/team-tablet-04@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-tablet/team-tablet-04.jpg    1x,
+                    ./images/team-tablet/team-tablet-04@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+
+                <!-- mobile -->
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob4.webp    1x,
+                    ./images/team-mobile/teammob4@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+
+                <source
+                  srcset="
+                    ./images/team-mobile/teammob4.jpg    1x,
+                    ./images/team-mobile/teammob4@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
                 <img
                   class="our-team__list-images"
                   src="./images/our-team/img7.jpg"
-                  alt=""
                 />
               </picture>
               <div class="our-team__several">
@@ -456,7 +635,7 @@
 
       <!-- Regular-customers -->
 
-      <!-- <section class="section reg__customers">
+      <section class="section reg__customers">
         <div class="container">
           <h2 class="section-heading">Постоянные клиенты</h2>
           <ul class="list reg__customers-list">
@@ -504,12 +683,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Footer -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <div class="footer__section">
           <a
@@ -599,7 +778,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
