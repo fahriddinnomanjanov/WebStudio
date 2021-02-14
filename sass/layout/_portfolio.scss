@@ -1,24 +1,18 @@
 /* Портфолио */
 
-// .wrapper {
-//   border: 1px solid #ececec;
+.wrapper {
+  border: 1px solid #ececec;
 
-//   &__item:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
+  &__item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 20px;
+  }
+}
 
 .wrapper__list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-}
-.wrapper__item {
-  // display: flex;
-  margin-right: 8px;
-  margin-bottom: 20px;
-}
-@media screen and (min-width: 480px) {
 }
 
 .wrapper__button {

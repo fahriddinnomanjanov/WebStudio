@@ -385,7 +385,7 @@ ol {
 .contact-form__description {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   color: #212121;
 }
@@ -480,8 +480,20 @@ ol {
 
 .contact-form__policy-label {
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 14px;
   text-align: center;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-form__policy-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .contact-form__description {
+    line-height: 23px;
+  }
 }
 
 .contact-form__policy-label::before {
@@ -494,7 +506,7 @@ ol {
   background-position: center;
   background-image: url(../images/icons/Vector.svg);
   border-radius: 3px;
-  margin-right: 10px;
+  margin-right: 8px;
   vertical-align: middle;
 }
 
@@ -570,6 +582,7 @@ ol {
 }
 
 .mobile-menu {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,13 +594,11 @@ ol {
       -ms-flex-pack: justify;
           justify-content: space-between;
   overflow: scroll;
-  position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   width: 100%;
-  height: 95vh;
-  max-height: 796px;
-  max-width: 480px;
+  height: 100vh;
   background-color: #ffffff;
   opacity: 1;
   padding-top: 48px;
@@ -630,8 +641,14 @@ ol {
   display: flex;
 }
 
+.burger-social-item {
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
 .burger-social-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  margin-right: 10px;
 }
 
 .burger-social-link {
@@ -1339,6 +1356,15 @@ ol {
 }
 
 /* Портфолио */
+.wrapper {
+  border: 1px solid #ececec;
+}
+
+.wrapper__item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 20px;
+}
+
 .wrapper__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1346,11 +1372,6 @@ ol {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 50px;
-}
-
-.wrapper__item {
-  margin-right: 8px;
-  margin-bottom: 20px;
 }
 
 .wrapper__button {

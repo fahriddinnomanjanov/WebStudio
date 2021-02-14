@@ -8,7 +8,7 @@
 .contact-form__description {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   color: #212121;
 }
@@ -86,8 +86,19 @@
 
 .contact-form__policy-label {
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 14px;
   text-align: center;
   color: #757575;
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__policy-label {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .contact-form__description {
+    line-height: 23px;
+  }
 }
 
 .contact-form__policy-label::before {
@@ -100,7 +111,7 @@
   background-position: center;
   background-image: url(../images/icons/Vector.svg);
   border-radius: 3px;
-  margin-right: 10px;
+  margin-right: 8px;
   vertical-align: middle;
 }
 
