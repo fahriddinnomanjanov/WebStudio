@@ -566,7 +566,8 @@ ol {
   top: 0;
   right: 0;
   width: 100%;
-  height: 796px;
+  height: 95vh;
+  max-height: 796px;
   max-width: 480px;
   background-color: #ffffff;
   opacity: 1;
